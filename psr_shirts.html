@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart UI</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+   <div class="CartContainer">
+   	   <div class="Header">
+   	   	<h3 class="Heading">Phi Sigma Rho Shirt Order Form </h3>
+   	   </div>
+	   <div class="Header">
+		   <div>
+		   <h5 class="tinyFont"> when finished take a picture and send to alabama.phisigmarho.apparel@gmail.com. price includes taxes. payment: cash or venmo @shelby-jordan-41 </h5>
+			   </div>
+   	   </div>
+
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+   	   	  	<img src="C:\Users\sxiao\OneDrive\Documents\psr_wesite\penguin_shirt_example-01.png" style={{ width="250px" }} />
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">shirt a - $21.79</h1>
+   	   	  	<h3 class="subtitle">white gildan heavy cotton shirt</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+			  <script type="text/javascript">
+				  var costTotal = 0;
+			  	var aShirtClicks = 0;
+				var aTotal = 0;
+				 var aPrice = 21.79;
+				  function onAShirtClick(){
+					  aShirtClicks += 1;
+					  document.getElementById("aShirtClicks").innerHTML = aShirtClicks;
+					  aTotal += aPrice;
+					  costTotal += aTotal;
+					  document.getElementById("aTotal").innerHTML = aTotal;
+					  document.getElementById("costTotal").innerHTML = costTotal;
+				  };
+//				  function subAShirtClick(){
+////					  if (aShirtClicks == 0){
+////						  aShirtClicks = 0;
+////						  aTotal = 0;
+////					  }
+////					  else {
+//						  aShirtClicks -= 1;
+//						  aTotal = aTotal-aPrice;
+//						  costTotal -= aTotal;
+//					  //}
+//					  document.getElementById("aShirtClicks").innerHTML = aShirtClicks;
+//					  document.getElementById("aTotal").innerHTML = aTotal;
+//					  document.getElementById("costTotal").innerHTML = costTotal;
+//				  }
+			  </script>
+			  <p class="count"><a id="aShirtClicks">0</a></p>
+			  <btn class="btn" onclick = "onAShirtClick()">+</btn>
+<!--			  <btn class="btn" onclick = "subAShirtClick()">-</btn>-->
+<!--
+   	   	  	<div class="btn">+</div>
+   	   	  	<div class="count">0</div>
+   	   	  	<div class="btn">-</div>
+-->
+			<div class="prices">
+			  <div class="amount"><a id="aPrice">0</a></div>
+			</div>
+		</div>
+	  </div>
+
+   	   <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+   	   	  	<img src="C:\Users\sxiao\OneDrive\Documents\psr_wesite\wavy_res_example-01.png" style={{ width="250px" }} />
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">shirt b - $40.32</h1>
+   	   	  	<h3 class="subtitle">navy gildan sweatshirt</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+			<script type="text/javascript">
+			  	var bShirtClicks = 0;
+				var bTotal = 0;
+				  var bPrice = 40.32;
+				  function onBShirtClick(){
+					  bShirtClicks += 1;
+					  document.getElementById("bShirtClicks").innerHTML = bShirtClicks;
+					  bTotal = bTotal + bPrice;
+					  document.getElementById("bTotal").innerHTML = bTotal;
+					  costTotal += bTotal;
+					  document.getElementById("costTotal").innerHTML = costTotal;
+				  };
+//				  function subBShirtClick(){
+////					  if (bShirtClicks == 0){
+////						  bShirtClicks = 0;
+////						  bTotal = 0;
+////					  }
+////					  else {
+//						  bShirtClicks -= 1;
+//						  bTotal = bTotal-bPrice;
+//						  costTotal -= bTotal;
+//					 // }
+//					  document.getElementById("bShirtClicks").innerHTML = bShirtClicks;
+//					  document.getElementById("bTotal").innerHTML = bTotal;
+//					  document.getElementById("costTotal").innerHTML = costTotal;
+//				  }
+			  </script>
+			  <p class="count"><a id="bShirtClicks">0</a></p>
+			  <btn class="btn" onclick = "onBShirtClick()">+</btn>
+<!--			  <btn class="btn" onclick = "subBShirtClick()">-</btn>-->
+			<div class="prices">
+			  <div class="amount"><a id="bTotal">0</a></div>
+			</div>
+   	   </div>
+	   </div>
+	   
+	    <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+   	   	  	<img src="C:\Users\sxiao\OneDrive\Documents\psr_wesite\prl_example-01.png" style={{ width="250px" }} />
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Shirt C - $26.15</h1>
+   	   	  	<h3 class="subtitle">white cotton shirt with pocket</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<script type="text/javascript">
+			  	var cShirtClicks = 0;
+				var cTotal = 0;
+				  var cPrice = 26.15;
+				  function onCShirtClick(){
+					  cShirtClicks += 1;
+					  document.getElementById("cShirtClicks").innerHTML = cShirtClicks;
+					  cTotal = cTotal + cPrice;
+					  costTotal += cTotal;
+					  document.getElementById("cTotal").innerHTML = cTotal;
+					  document.getElementById("costTotal").innerHTML = costTotal;
+				  };
+//				  function subCShirtClick(){
+////					  if (cShirtClicks == 0){
+////						  cShirtClicks = 0;
+////						  cTotal = 0;
+////					  }
+//					  else {
+//						  cShirtClicks -= 1;
+//						  cTotal = cTotal-cPrice;
+//						  costTotal -= cTotal;
+//					 // }
+//					  document.getElementById("cShirtClicks").innerHTML = cShirtClicks;
+//					  document.getElementById("cTotal").innerHTML = cTotal;
+//					  document.getElementById("costTotal").innerHTML = costTotal;
+//				  }
+			  </script>
+			  <p class="count"><a id="cShirtClicks">0</a></p>
+			  <btn class="btn" onclick = "onCShirtClick()">+</btn>
+<!--			  <btn class="btn" onclick = "subCShirtClick()">-</btn>-->
+			<div class="prices">
+			  <div class="amount"><a id="cTotal">0</a></div>
+			</div>
+   	   </div>
+			</div>
+	   
+	   <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+   	   	  	<img src="C:\Users\sxiao\OneDrive\Documents\psr_wesite\psr_blend_example-01.png" style={{ width="250px" }} />
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Shirt D - $38.14</h1>
+   	   	  	<h3 class="subtitle">white gildan hoodie</h3>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  		<script type="text/javascript">
+			  	var dShirtClicks = 0;
+				var dTotal = 0;
+				  var dPrice = 38.14;
+				  function onDShirtClick(){
+					  dShirtClicks += 1;
+					  document.getElementById("dShirtClicks").innerHTML = dShirtClicks;
+					  dTotal = dTotal + dPrice;
+					  costTotal += dTotal;
+					  document.getElementById("dTotal").innerHTML = dTotal;
+					  document.getElementById("costTotal").innerHTML = costTotal;
+				  };
+//				  function subDShirtClick(){
+////					  if (dShirtClicks == 0){
+////						  dShirtClicks = 0;
+////						  dTotal = 0;
+////					  }
+////					  else {
+//						  dShirtClicks -= 1;
+//						  dTotal = dTotal-dPrice;
+//						  costTotal = costTotal - dTotal;
+//					  document.getElementById("dShirtClicks").innerHTML = dShirtClicks;
+//					  document.getElementById("dTotal").innerHTML = dTotal;
+//					  document.getElementById("costTotal").innerHTML = costTotal;
+//				  }
+			  </script>
+			  <p class="count"><a id="dShirtClicks">0</a></p>
+			  <btn class="btn" onclick = "onDShirtClick()">+</btn>
+<!--			  <btn class="btn" onclick = "subDShirtClick()">-</btn>-->
+			<div class="prices">
+			  <div class="amount"><a id="dTotal">0</a></div>
+			</div>
+   	   </div>
+		   </div>
+	   
+   	 <hr>
+	   
+   	 <div class="checkout">
+   	 <div class="total">
+   	 	<div>
+			<script type="text/javascript">
+				costTotal = aTotal + bTotal + cTotal + dTotal;
+				document.getElementById("costTotal").innerHTML = costTotal;
+			</script>
+   	 		<div class="Subtotal">Total</div>
+   	 	</div>
+		 <div class="total-amount"><a id="costTotal">0</a></div>
+   	 </div>
+   	 <form action="https://venmo.com" class="button"><button class="button"> finish </button></form>
+   </div>
+	   </div>
+</body>
+</html>
